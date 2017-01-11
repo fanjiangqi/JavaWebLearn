@@ -5,4 +5,5 @@ package SpringCoreLearn.JavaConfig;
  */
 public interface App {
     void display();
+    void sendMessage();
 }

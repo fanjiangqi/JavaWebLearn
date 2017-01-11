@@ -8,4 +8,8 @@ public class Qq implements App {
     public void display() {
         System.out.println("我是qq");
     }
+
+    public void sendMessage() {
+
+    }
 }

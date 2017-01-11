@@ -1,5 +1,5 @@
+import SpringCoreLearn.JavaConfig.App;
 import SpringCoreLearn.JavaConfig.WeiChat;
-import SpringCoreLearn.JavaConfig.WeiChatAop;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,9 +14,9 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 @ContextConfiguration(classes = SpringCoreLearn.JavaConfig.IphoneConfig.class)
 public class WeiChatAopTest {
     @Autowired
-    private WeiChat weiChat;
+    private App weiChat;
    /* @Autowired
-    private WeiChatAop weiChatAop;*/
+    private AopAction weiChatAop;*/
     @Test
     public void actionTest(){
         weiChat.sendMessage();

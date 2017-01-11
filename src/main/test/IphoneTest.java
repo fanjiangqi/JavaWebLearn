@@ -1,4 +1,5 @@
 import SpringCoreLearn.JavaConfig.App;
+import SpringCoreLearn.JavaConfig.WeiChat;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,10 +15,10 @@ import static org.junit.Assert.assertNotNull;
 @ContextConfiguration(classes = SpringCoreLearn.JavaConfig.IphoneConfig.class)
 public class IphoneTest {
     @Autowired
-    private App app;
+    private App weiChat;
     @Test
     public void appShouldNotNull(){
-        assertNotNull(app);
+        assertNotNull(weiChat);
         //app.display();
     }
 }

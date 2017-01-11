@@ -8,7 +8,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class Test {
     public static void main(String[] args) {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(IphoneConfig.class);
-        WeiChat weiChat = context.getBean(WeiChat.class);
+        App weiChat = context.getBean("weiChat",App.class);
         weiChat.sendMessage();
         /*App app = context.getBean(Qq.class);
         app.display();*/

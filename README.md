@@ -8,3 +8,5 @@
  ```
  Exception in thread "main" org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [SpringCoreLearn.JavaConfig.WeiChat] is define
  ```
+ - 把WeiChai 不实现APP接口，就不会报错，猜测问题可能是JDK代理和CGLIB代理导致的，待解决 -2017.1.11
+ - **重要的一点，bean的ID默认为;IphoneConfig类中方法名，比如是weiChat，而不是WeiChat**，那么又有一个问题，用@Component自动创建的bean，ID是什么呢？Spring in Action写到，**自动将类名第一个字母小写作为ID**

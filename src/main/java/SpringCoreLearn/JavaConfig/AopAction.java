@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
  * Created by fanjiangqi on 2017/1/10.
  */
 @Aspect
-public class WeiChatAop {
+public class AopAction {
     @Pointcut("execution(** SpringCoreLearn.JavaConfig.WeiChat.sendMessage(..))")
     public void weiChatAopPerfor(){}
     @Before("weiChatAopPerfor()")

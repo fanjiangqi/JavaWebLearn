@@ -1,7 +1,6 @@
 package SpringCoreLearn.JavaConfig;
 
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
@@ -13,8 +12,8 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
 @EnableAspectJAutoProxy
 public class IphoneConfig {
     @Bean
-    public WeiChatAop weiChatAop(){
-        return new WeiChatAop();
+    public AopAction aopActionp(){
+        return new AopAction();
     }
     @Bean
     public WeiChat weiChat(){
